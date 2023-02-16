@@ -12,11 +12,11 @@ export class Payment {
   @Field(() => Int)
   amount: number;
 
-  @Column()
+  @Column({ default: 0 })
   @Field(() => Int)
   tax: number;
 
-  @Column()
+  @Column({ default: 0 })
   @Field(() => Int)
   commission: number;
 }
